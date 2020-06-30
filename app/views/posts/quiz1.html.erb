@@ -1,0 +1,33 @@
+<div class="top-wrapper">
+  <div class="container">
+    <div class="quiz">
+      <h1>Quiz 1</h1>
+      <h2>問題</h2>
+      <div class="text">
+        <p>こがの学籍番号の下４桁は？</p>
+        <p>一年間ずっと一緒に過ごしてきたゆいならわかって当然だよね？わかんなかったらこがくん泣いちゃいます。</p>
+      </div>
+    </div>
+    <div class="answer">
+      <%= form_tag('/posts/answer1') do %>
+      <p>Answer</p>
+      <input type="text" name="answer1" class="answertext">
+      <input type="submit" value='解答'>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="hint-wrapper">
+  <div class="container">
+    <div class="love-words">
+      <p>ヒント</p>
+      <%= form_tag("/posts/lovewords") do %>
+      <textarea name="lovewords1" id="" cols="60" rows="3" value="a">ここにこがに対する愛の言葉を記入せよ。さすれば、何かが起こるだろう。</textarea>
+      <input type="submit">
+      <% end %>
+    </div>
+    <div class="hint">
+    <p>時計の裏を探せ</p>
+    </div>
+  </div>
+</div>

@@ -13,3 +13,97 @@
  *= require_tree .
  *= require_self
  */
+
+ /*共通レイアウト*/
+
+ * {
+  box-sizing: border-box;
+}
+
+html {
+  font: 100%/1.5 'Avenir Next', 'Hiragino Sans', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2d3133;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+input {
+  background-color: transparent;
+  outline-width: 0;
+}
+
+form input[type="submit"] {
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  color: #2d3133;
+  background-color: #f7f6d850;
+  margin: 0;
+  min-height: 1vh;
+}
+
+.main {
+  position: absolute;
+  top: 64px;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background-color: #f7f6d855;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both;
+}
+
+/*共通レイアウト*/
+
+ header {
+   background-color: rgba(205, 43, 226, 0.367);
+   height: 70px;
+ }
+
+
+
+ .header-left {
+   font-size: large;
+   margin-left: 2%;
+   float: left;
+   margin-top: 5px;
+ }
+
+ .header-right {
+   float: right;
+   display: none;
+ }
+
+ .quiz-index {
+   float: right;
+   padding-top: 10px;
+   padding-right: 30px;
+ }
+
+ .quiz-index a{
+   font-size: small;
+   padding-left: 3px;
+ }

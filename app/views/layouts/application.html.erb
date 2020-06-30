@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>OneYearAnniversary</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <title>OneYearAnniversary</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-  <body>
-    <%= yield %>
-  </body>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <p class="logo">One Year Anniversary</p>
+    </div>
+    <div class="header-right">
+      <%= link_to("Top",'/') %>
+    </div>
+    <div class="quiz-index">
+    <p>Quiz</p>
+      <%= link_to("No.1",'/posts/quiz1') %>
+      <%= link_to("No.2",'/posts/quiz2') %>
+      <%= link_to("No.3",'/posts/quiz3') %>
+      <%= link_to("No.4",'/posts/quiz4') %>
+    </div>
+  </header>
+  <%= yield %>
+</body>
+
 </html>

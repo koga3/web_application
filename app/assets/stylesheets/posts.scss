@@ -2,7 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.main{
-  width: 100%;
-  height: 100%;
+.answer {
+  margin-top: 15px;
+  margin-left: 60px;
+}
+
+.answer p {
+  font-size: x-large;
+}
+
+.answertext {
+  height: 30px;
+  margin-left: 70px;
+  margin-top: 5px;
+}
+
+textarea{
+  color: rgba($color: #000000, $alpha: 0.3);
+  margin-left: 10px;
+}
+
+.hint {
+  display: none;
 }
