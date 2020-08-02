@@ -6,3 +6,23 @@
   margin: 0 auto;
   text-align: center;
 }
+
+h1 {
+  font-size: 60px;
+  padding-top: 1px;
+}
+
+.start {
+  background-color: rgba($color: #d0622f55, $alpha: 0.5);
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #913c0bec;
+  font-weight: bold;
+}
+
+
+img {
+  z-index: 2;
+  width: 500px;
+  margin: 0;
+}

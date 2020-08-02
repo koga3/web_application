@@ -1,4 +1,9 @@
 <div class="main">
-  <h1>一年記念</h1>
-  <%= link_to("サプライズスタート！", "/posts/top") %>
+  <div class="top-wrapper">
+    <div class="container">
+      <%= image_tag '1.jpg' %>
+      <h1>一年記年クイズ</h1>
+      <%= link_to "クイズスタート！", {controller: :posts, action: :top}, class: :start %>
+    </div>
+  </div>
 </div>
