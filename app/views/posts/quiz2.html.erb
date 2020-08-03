@@ -1,0 +1,37 @@
+<div class="top-wrapper">
+  <div class="container">
+    <div class="quiz">
+      <h1>Quiz 2</h1>
+      <h2>問題</h2>
+      <div class="text">
+        <p>こがの実家の住所は次のうちどれ？</p>
+        <p>わかんなかったらこがくん泣いちゃいます。</p>
+      </div>
+    </div>
+    <div class="answer">
+      <%= form_tag('/posts/answer2') do %>
+      <p>Answer</p>
+      <ul>
+        <li><input type="radio" name="answer" value="4">小郡市望みが丘</li>
+        <li><input type="radio" name="answer" value="4009">小郡市希みが丘</li>
+        <li><input type="radio" name="answer" value="4010">小郡市のぞみが丘</li>
+      </ul>
+      <input type="submit" value='解答'>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="hint-wrapper">
+  <div class="container">
+    <div class="love-words">
+      <p>ヒント</p>
+      <%= form_tag("/posts/lovewords2") do %>
+      <textarea name="lovewords1" id="" cols="60" rows="3" value="a">どうしてもわかんなかったらここにこがに対する愛の言葉を記入せよ。</textarea>
+      <input type="submit">
+      <% end %>
+    </div>
+    <div class="hint">
+      <p>時計の裏を探せ</p>
+    </div>
+  </div>
+</div>

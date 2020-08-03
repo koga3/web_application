@@ -1,0 +1,37 @@
+<div class="top-wrapper">
+  <div class="container">
+    <div class="quiz">
+      <h1>Quiz 4</h1>
+      <h2>問題</h2>
+      <div class="text">
+        <p>こがの今の気持ちはどれ？</p>
+        <p>わかんなかったらこがくん泣いちゃいます。</p>
+      </div>
+    </div>
+    <div class="answer">
+      <%= form_tag('/posts/answer4') do %>
+      <p>Answer</p>
+      <ul>
+        <li><input type="radio" name="answer" value="4009">ゆいちゃん大好き</li>
+        <li><input type="radio" name="answer" value="4009">ゆいちゃん大好き</li>
+        <li><input type="radio" name="answer" value="4009">ゆいちゃん大好き</li>
+      </ul>
+      <input type="submit" value='解答'>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="hint-wrapper">
+  <div class="container">
+    <div class="love-words">
+      <p>ヒント</p>
+      <%= form_tag("/posts/lovewords4") do %>
+      <textarea name="lovewords1" id="" cols="60" rows="3" value="a">どうしてもわかんなかったらここにこがに対する愛の言葉を記入せよ。</textarea>
+      <input type="submit">
+      <% end %>
+    </div>
+    <div class="hint">
+      <p>時計の裏を探せ</p>
+    </div>
+  </div>
+</div>
