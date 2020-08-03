@@ -22,5 +22,6 @@ Rails.application.routes.draw do
   get 'posts/correct4' => 'posts#correct4'
   post 'posts/lovewords4' => 'posts#lovewords4'
   get 'posts/hint4' => 'posts#hint4'
+  get 'posts/:id/nocorrect' => 'posts#nocorrect'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

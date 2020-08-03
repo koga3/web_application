@@ -9,6 +9,8 @@ class PostsController < ApplicationController
   def answer1
     if params['answer'] == '4009'
       redirect_to '/posts/correct1'
+    else 
+      redirect_to '/posts/1/nocorrect'
     end
   end
   def lovewords
@@ -17,6 +19,8 @@ class PostsController < ApplicationController
   def answer2
     if params['answer'] == '4009'
       redirect_to '/posts/correct2'
+    else 
+      redirect_to '/posts/2/nocorrect'
     end
   end
   def lovewords2
@@ -26,6 +30,8 @@ class PostsController < ApplicationController
   def answer3
     if params['answer'] == '4009'
       redirect_to '/posts/correct3'
+    else 
+      redirect_to '/posts/3/nocorrect'
     end
   end
   def lovewords3
@@ -35,9 +41,15 @@ class PostsController < ApplicationController
   def answer4
     if params['answer'] == '4009'
       redirect_to '/posts/correct4'
+    else 
+      redirect_to '/posts/4/nocorrect'
     end
   end
   def lovewords4
      redirect_to '/posts/hint4'
+  end
+
+  def nocorrect
+    
   end
 end
